@@ -136,7 +136,7 @@ $(document).ready(function(){
     
     // API call to obtain UV data
     $.ajax({
-      url: "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + apiKey,
+      url: "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + apiKey,
       method: "GET"
     }).then(function (response){
       let uv = $("<p>").text("UV Index: ");
